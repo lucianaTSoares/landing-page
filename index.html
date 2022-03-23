@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang=pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Bootstrap</title>
+</head>
+
+<style>
+    :root {
+        --clr-granite: #e5d3d3;
+        --clr-rose: #64403E;
+        --clr-sea-green: #428A61;
+    }
+
+    .bg-granite {
+        background-color: var(--clr-granite);
+    }
+
+    .bg-rose {
+        background-color: var(--clr-rose);
+    }
+
+    .txt-sea-green {
+        color: var(--clr-sea-green);
+    }
+</style>
+
+<body class="bg-rose">
+    <!--? MENU-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-rose fixed-top">
+        <a class="navbar-brand" href="#">Gameflix</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link font-weight-bold" href="#">Início <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#titulo-jumbotron">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#titulo-noticia">Notícias</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-expanded="false">
+                        Opções
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Vídeos</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Entre em contato</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquise aqui" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+    <!--? FIM MENU-->
+
+
+    <!--? CAROUSEL-->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://cdn.sqexeu.com/gotg/wallpapers/mgg_wallpaper_sedesktop_2560x1440.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.pinimg.com/originals/34/7f/c1/347fc1c0ac985f4b846025fcd4a4b1ad.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://wallpaperforu.com/wp-content/uploads/2020/10/video-game-wallpaper-201005202240362048x1152.jpg"
+                    class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </button>
+    </div>
+    <!--? FIM CAROUSEL-->
+
+
+    <!--? JUMBOTRON-->
+    <div class="jumbotron jumbotron-fluid bg-granite" id="titulo-jumbotron">
+        <div class="container">
+            <h1 class="display-4">Sobre</h1>
+            <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae quibusdam, vel beatae nostrum minima distinctio nulla animi. Odio perferendis exercitationem, accusantium reiciendis sequi hic veniam praesentium consequatur, excepturi cupiditate amet atque omnis vel maiores labore, voluptatem in eum. Mollitia ut distinctio itaque error, aspernatur vitae laborum dicta accusantium delectus atque qui tenetur totam doloribus quae vel ad? Aliquid obcaecati voluptatibus facere fuga voluptates quisquam. Unde laudantium fuga, voluptatibus sit adipisci sunt ipsa nobis corporis obcaecati et autem aliquam, cumque, corrupti perferendis recusandae odit officia est dolorum aspernatur dicta similique vel labore quos. Ex inventore, nobis delectus incidunt enim ab nihil.</p>
+        </div>
+    </div>
+    <!--? FIM JUMBOTRON-->
+
+
+    <div class="container">
+        <!--? CARDS-->
+        <div class="h2 mb-4 text-light" id="titulo-noticia">Notícias</div>
+        <div class="card-deck">
+            <div class="card">
+                <img src="https://s2.glbimg.com/obT5Rpl2CcX_Y2e2lQsEn-dpDGA=/810x456/top/smart/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/F/P/tTnO5wTbCGEI8X9Y38xA/witcher-saga.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title txt-sea-green">'The Witcher': novo game, de uma 'nova saga', está em desenvolvimento</h5>
+                    <p class="card-text">CD Projekt anunciou que trabalha em novo jogo da franquia, mas não deu detalhes sobre título, história ou previsão de lançamento.</p>
+                    <p class="card-text"><small class="text-muted">2 dias atrás</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://s2.glbimg.com/LuT-FN_Yt0Nk23ryFGm61Fd71m4=/810x456/top/smart/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/p/n/jbbhyPSJmRwWPRiBTaYw/hogwarts-legacy.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title txt-sea-green">'Hogwarts Legacy', game de 'Harry Potter', vai ser lançado no fim de 2022</h5>
+                    <p class="card-text">RPG de mundo aberto vai ter história ambientada no final do século 19, cem anos antes da narrativa dos livros de J. K. Rowling.
+                    </p>
+                    <p class="card-text"><small class="text-muted">6 dias atrás</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://s2.glbimg.com/wl035NWYKSZTTKceid1JUQCahdw=/0x0:1920x1080/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2022/a/R/w5CAOVS4ArIWvtXf2qvw/ghostbusters-spirits-unleashed-pov.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title txt-sea-green">'Ghostbusters: Spirits Unleashed', novo game baseado nos 'Caça-Fantasmas', vai ser lançado em 2022</h5>
+                    <p class="card-text">Game será lançado para computadores, PlayStation 4 e 5, Xbox Series X/S e Xbox One no último trimestre do ano.</p>
+                    <p class="card-text"><small class="text-muted">8 dias atrás</small></p>
+                </div>
+            </div>
+        </div>
+        <!--? FIM CARDS-->
+    
+
+
+        <!--? TEXTO E VÍDEO-->
+        <div class="row my-5">
+                <div class="col-md-6 text-light">
+                    <h3>God Of War rodando liso</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima omnis sed nihil delectus impedit eligendi libero. Ut voluptas nemo labore deleniti aperiam, excepturi adipisci. Soluta corporis impedit voluptates, dolore alias aut totam minus vitae. Laudantium totam magni pariatur quisquam qui magnam reiciendis, rerum debitis. Rem eveniet delectus praesentium doloribus odio!</p>
+                </div>
+
+                <div class="col-md-6">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Q-M8hfX7UUs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <!--? FIM TEXTO E VÍDEO-->
+
+
+        <!--? FORMULARIO-->
+
+        <div class="py-4 bg-granite vw-100">
+            <div class="container">
+                <h2>Entre em contato</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form>
+                            <div class="form-group">
+                                <label for="txtNome" class="mt-3">Nome:</label>
+                                <input type="text" class="form-control" id="txtNome">
+    
+                                <label for="txtEmail" class="mt-3">E-mail:</label>
+                                <input type="email" class="form-control" id="txtEmail">
+    
+                                <label for="txaAssunto" class="mt-3">Assunto:</label>
+                                <textarea class="form-control" id="txaAssunto" rows="3"></textarea>
+                                <button class="btn btn-light mt-4" type="submit">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                
+                <div class="col-md-6">
+                    <iframe class="embed-responsive embed-responsive-4by3" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14627.721049557013!2d-46.644044!3d-23.570948!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8e470a76a1aef0d7!2sCentro%20Cultural%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1648059971914!5m2!1spt-BR!2sbr" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                </div>
+            </div>
+        </div>
+            
+        
+        <!--? FIM FORMULARIO-->
+
+
+        <!--? FOOTER-->
+        <footer class="text-light">
+            <div class="row mb-3">
+                <div class="col-md-12 d-flex justify-content-center">
+                    <i class="bi bi-facebook p-2 display-4"></i></li>
+                    <i class="bi bi-instagram p-2 display-4"></i></li>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">Feito por: Luciana &copy</p>
+                </div>
+            </div>
+        </footer>
+
+    <!--? FIM FOOTER-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
